@@ -1,0 +1,31 @@
+body {background-image: url('https://images.unsplash.com/photo-1598985348522-aab254d10928?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80');
+      background-repeat:repeat-y;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 100%;
+      }
+
+body .main_title {display:flex;
+                  justify-content:center}
+
+body .title{display:flex;
+            flex-direction:row;
+            justify-content: space-evenly}
+body .alert-success{background-color: black;
+                    width:50%
+                    }
+
+body .alert-dark{text-align:center}
+
+body .active_buttons{display:flex;
+                     flex-direction:row;
+                     justify-content:space-around}
+
+
+body .modal-header{background-color: #e0a502;
+                   }
+
+body .modal-body {background-color: #1e5409}
+
+body .modal-footer{background-color: #e0a502 }

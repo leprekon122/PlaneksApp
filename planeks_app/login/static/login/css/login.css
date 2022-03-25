@@ -1,0 +1,25 @@
+body {background-image: url('https://images.unsplash.com/photo-1646086347151-7e84d83853de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')}
+
+
+body .login {
+              display:flex;
+              justify-content:center;
+              align-items: center;
+              height: 100vh}
+
+body .alert-dark{width: 30%;
+                 background-color: #4a5059}
+
+body .login_button{display:flex;
+                   justify-content:center}
+
+body .login_button button{width:35%}
+
+
+body .alert-dark a{width:100%}
+
+body .modal-body{background-color:#6e1202}
+
+body .modal-header{background-color:#300b04}
+
+body .modal-footer{background-color: #300b04}

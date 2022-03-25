@@ -1,0 +1,51 @@
+{%extends 'login/layout.html'%}
+
+{%block title%}Login page{%endblock%}
+
+
+{%block content%}
+<div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="login">
+        <div class="alert alert-dark">
+            <form method="get">
+                {%csrf_token%}
+                <input type="text" class="form-control" name="username"><br>
+                <input type="password" class="form-control" name="password"><br>
+                <div class="login_button">
+                    <button class="btn btn-success" type="submit">login</button>
+                </div>
+            </form>
+
+            <br>
+            <a class="btn btn-warning text-primary" data-target="#register" data-toggle="modal">register</a>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="register">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light">Registration</h5>
+                    <button type="button" class="close btn btn-light text-danger" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="modal-body text-light">
+                        {{form.as_p}}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger" name="register" value="register">register</button>
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{%endblock%}
